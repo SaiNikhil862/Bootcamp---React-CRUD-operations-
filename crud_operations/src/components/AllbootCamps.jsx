@@ -10,7 +10,7 @@ const AllbootCamps = () => {
 
   // fetch all bootcamps
   const responce = async () => {
-    let res = await fetch("http://localhost:5000/api/v1/bootcamps")
+    let res = await fetch("https://bootcamp-backend-i157736i1-sai-nikhils-projects-adb845a3.vercel.app/api/v1/bootcamps")
     let dataa = await res.json()
     setcamps(dataa.data) // ✅ store only data array
   }
@@ -22,7 +22,7 @@ const AllbootCamps = () => {
   // delete bootcamp by id
   const handlesubmit = async (id) => {
     try {
-      let res = await fetch(`http://localhost:5000/api/v1/bootcamps/${id}`, {
+      let res = await fetch(`https://bootcamp-backend-i157736i1-sai-nikhils-projects-adb845a3.vercel.app/api/v1/bootcamps/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

@@ -24,7 +24,7 @@ const CreateCourse = () => {
  
    
   let responce=async()=>{
-    let res=await fetch("http://localhost:5000/api/v1/bootcamps")
+    let res=await fetch("https://bootcamp-backend-i157736i1-sai-nikhils-projects-adb845a3.vercel.app/api/v1/bootcamps")
     let dataa= await res.json()
     console.log(dataa.data );
     setBootcampp(dataa?.data)
@@ -50,7 +50,7 @@ const CreateCourse = () => {
    let handlesubmit = async (e) => {
            e.preventDefault();
             
-           let res = await fetch(`http://localhost:5000/api/v1/bootcamps/${formData.bootcamp}/courses`, {
+           let res = await fetch(`https://bootcamp-backend-i157736i1-sai-nikhils-projects-adb845a3.vercel.app/api/v1/bootcamps/${formData.bootcamp}/courses`, {
                method: "POST",
                headers: {
                    "Content-Type": "application/json",

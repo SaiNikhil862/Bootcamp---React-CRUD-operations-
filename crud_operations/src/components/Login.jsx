@@ -22,7 +22,7 @@ let{logtoken,setlogtoken,setauth}=useContext(mycontext)
   const handleSubmit =async (e) => {
     e.preventDefault();
     console.log(fdata);
-    let res=await fetch("http://localhost:5000/api/v1/auth/login",{
+    let res=await fetch("https://bootcamp-backend-i157736i1-sai-nikhils-projects-adb845a3.vercel.app/api/v1/auth/login",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body: JSON.stringify(fdata),

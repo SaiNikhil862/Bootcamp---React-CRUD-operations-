@@ -27,7 +27,7 @@ function CreateBootcamp() {
     let handlesubmit = async (e) => {
         e.preventDefault();
         // 'Authorization': `Bearer ${token}`
-        let res = await fetch("http://localhost:5000/api/v1/bootcamps", {
+        let res = await fetch("https://bootcamp-backend-i157736i1-sai-nikhils-projects-adb845a3.vercel.app/api/v1/bootcamps", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

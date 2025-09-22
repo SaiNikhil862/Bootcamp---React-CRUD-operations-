@@ -42,7 +42,7 @@ const UpdateBootcamp = () => {
     e.preventDefault();
     try {
       let res = await fetch(
-        `http://localhost:5000/api/v1/bootcamps/${loc?.state?._id}`,
+        `https://bootcamp-backend-i157736i1-sai-nikhils-projects-adb845a3.vercel.app/api/v1/bootcamps/${loc?.state?._id}`,
         {
           method: "PUT",
           headers: {
