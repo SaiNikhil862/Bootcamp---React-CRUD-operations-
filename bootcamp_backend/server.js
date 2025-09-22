@@ -32,7 +32,12 @@ if (NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
 
-app.use(cors());
+app.use(cors({
+  origin: ['https://crud-operations-green.vercel.app', 'https://crud-operations-qp2e62xhs-sai-nikhils-projects-adb845a3.vercel.app', 'http://localhost:5173', 'http://localhost:5174'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(fileUpload());
 
 // Serve static files
