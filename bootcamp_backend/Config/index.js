@@ -1,0 +1,12 @@
+import dotenv from "dotenv";
+dotenv.config({ path: "./.env" }); 
+export const PORT = process.env.PORT;
+export const NODE_ENV = process.env.NODE_ENV;
+export const MONGODB_URL = process.env.MONGODB_URL;
+export const GEOCODER_PROVIDER = process.env.GEOCODER_PROVIDER;
+export const GEOCODER_API_KEY = process.env.GEOCODER_API_KEY;
+export const PHOTO_UPLOAD = process.env.PHOTO_UPLOAD;
+export const MAX_PHOTO_UPLOAD = process.env.MAX_PHOTO_UPLOAD;
+export const JWT_SECRET = process.env.JWT_SECRET;
+export const JWT_EXPIRE = process.env.JWT_EXPIRE;
+export const JWT_COOKIE_EXPIRE = process.env.JWT_COOKIE_EXPIRE;
